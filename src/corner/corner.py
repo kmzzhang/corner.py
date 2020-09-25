@@ -677,7 +677,7 @@ def hist2d(
             )
             range = kwargs["extent"]
         else:
-            range = [[x.min(), x.max()], [y.min(), y.max()]]
+            range = [[np.percentile(x, 2), np.percentile(x, 98)], [np.percentile(y, 2), np.percentile(y, 98)]]
 
     # Set up the default plotting arguments.
     if color is None:
