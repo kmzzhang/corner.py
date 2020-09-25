@@ -7,7 +7,7 @@ import numpy as np
 from matplotlib import pyplot as pl
 from matplotlib.colors import LinearSegmentedColormap, colorConverter
 from matplotlib.ticker import MaxNLocator, NullLocator, ScalarFormatter
-
+print('modified')
 try:
     from scipy.ndimage import gaussian_filter
 except ImportError:
